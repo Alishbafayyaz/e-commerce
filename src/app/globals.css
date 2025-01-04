@@ -2,20 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+select {
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+select option {
+  background-color: rgba(73, 72, 72, 0.8); /* Dropdown menu background */
+  color: white;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+select option:hover {
+  background-color: rgba(255, 255, 255, 0.2); 
 }
